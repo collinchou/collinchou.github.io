@@ -1,0 +1,220 @@
+.info {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin: 0px;
+}
+
+.user-center {
+    padding: 10px;
+    /* margin-bottom: 30px; */
+}
+
+
+/* #user-photo {
+    border: 1.5px solid black;
+} */
+
+.account,
+.email,
+.birthday,
+.nikename,
+.name,
+.pswd,
+.mapping,
+.sex,
+.mapping-age,
+.mapping-sex,
+.intro,
+.account-v,
+.email-v,
+.birthday-v,
+.nikename-v,
+.name-v,
+.pswd-v,
+.mapping-v,
+.sex-v,
+.mapping-age-v,
+.mapping-sex-v,
+.intro-v,
+.user-info {
+    text-align: left;
+    align-items: left;
+    padding: 0px;
+}
+
+.login-account span,
+.password span {
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 0;
+}
+
+.login-account input,
+.login-password input {
+    width: 100%;
+}
+
+.account p,
+.email p,
+.birthday p,
+.nikename p,
+.name p,
+.pswd p,
+.mapping p,
+.sex p,
+.mapping-age p,
+.login-password p,
+.login-account p,
+.mapping-sex p,
+.intro p,
+.user-info p {
+    text-align: left;
+    align-items: left;
+    color: #6B8BB2;
+}
+
+.submit {
+    text-align: left;
+    align-items: left;
+    color: #6B8BB2;
+    padding: 0;
+}
+
+.login-account-err p,
+.password-err p {
+    color: red;
+}
+
+.user-info a {
+    font-size: 24px;
+    margin: 0px;
+}
+
+.nikename-edit,
+.name-edit,
+.pswd-edit,
+.mapping-age-edit,
+.mapping-sex-edit,
+.intro-edit,
+.nikename-save,
+.name-save,
+.pswd-save,
+.mapping-age-save,
+.mapping-sex-save,
+.intro-save,
+.img-update {
+    border: none;
+    position: relative;
+    padding: 0;
+    background-color: #F6EFE5;
+}
+
+.none {
+    display: none;
+}
+
+#login {
+    display: none;
+}
+
+.signup a {
+    text-decoration: none
+}
+
+
+/* toggle switch */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ca2222;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2ab934;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(55px);
+    -ms-transform: translateX(55px);
+    transform: translateX(55px);
+}
+
+.on {
+    display: none;
+}
+
+.on,
+.off {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+}
+
+input:checked+.slider .on {
+    display: block;
+}
+
+input:checked+.slider .off {
+    display: none;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* toggle switch */
+
+.fat {
+    height: 55px;
+}
+
+.opacity {
+    opacity: 0;
+}

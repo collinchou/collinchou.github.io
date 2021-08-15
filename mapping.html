@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>配對設定</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/14.css" rel="stylesheet" />
+</head>
+
+<body class="d-flex flex-column">
+    <main class="flex-shrink-0">
+        <!-- header -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark " aria-label="Fourth navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fun Friend</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">論壇</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                                <li><a class="dropdown-item" href="#">aaaaaaa</a></li>
+                                <li><a class="dropdown-item" href="#">bbbbbbb</a></li>
+                                <li><a class="dropdown-item" href="#">ccccccc</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">交友</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                                <li><a class="dropdown-item" href="#">aaaaaaa</a></li>
+                                <li><a class="dropdown-item" href="#">bbbbbbb</a></li>
+                                <li><a class="dropdown-item" href="#">ccccccc</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">商城</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                                <li><a class="dropdown-item" href="#">aaaaaaa</a></li>
+                                <li><a class="dropdown-item" href="#">bbbbbbb</a></li>
+                                F
+                                <li><a class="dropdown-item" href="#">ccccccc</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">揪團</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                                <li><a class="dropdown-item" href="#">aaaaaaa</a></li>
+                                <li><a class="dropdown-item" href="#">bbbbbbb</a></li>
+                                <li><a class="dropdown-item" href="#">ccccccc</a></li>
+                            </ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">聊天室</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                                    <li><a class="dropdown-item" href="#">aaaaaaa</a></li>
+                                    <li><a class="dropdown-item" href="#">bbbbbbb</a></li>
+                                    <li><a class="dropdown-item" href="#">ccccccc</a></li>
+                                </ul>
+                            </li>
+                        </li>
+                    </ul>
+                    <div class="flex-shrink-0 dropdown none">
+                        <a href="login.html" class="d-block link-light text-decoration-none">
+                            登入/註冊
+                        </a>
+                    </div>
+                    <div class="flex-shrink-0 dropdown">
+                        <a href="#" class="d-block link-light text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/123.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+                        </a>
+                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2" id="dropdownUserImg">
+                            <li><a class="dropdown-item" href="#">會員資料</a></li>
+                            <li><a class="dropdown-item" href="#">配對設定</a></li>
+                            <li><a class="dropdown-item" href="#">檢舉回覆</a></li>
+                            <li><a class="dropdown-item" href="#">揪團紀錄</a></li>
+                            <li><a class="dropdown-item" href="#">商城紀錄</a></li>
+                            <li><a class="dropdown-item" href="#">論壇紀錄</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item" href="#">登出</a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- section -->
+        <section class="py-5" id="scroll-target">
+            <div class="container px-5 my-5">
+
+                <div class="row gx-5 align-items-center info">
+                    <div class="col-lg"></div>
+                    <div class="col-lg-9 mapping">
+                        <p>配對是否開啟</p>
+                    </div>
+                    <div class="col-lg"></div>
+                    <div class="col-lg"></div>
+                </div>
+                <div class="row gx-5 align-items-center info">
+                    <div class="col-lg"></div>
+                    <div class="col-lg-9 mapping-v">
+                        <label class="switch">
+                            <input type="checkbox" id="togBtn">
+                            <div class="slider round">
+                                <span class="off">OFF</span>
+                                <span class="on">ON</span>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="col-lg"></div>
+                    <div class="col-lg"></div>
+                </div>
+
+
+                <div class="row gx-5 align-items-center info">
+                    <div class="col-lg"></div>
+                    <div class="col-lg-9 sex">
+                        <p>性別</p>
+                    </div>
+                    <div class="col-lg"></div>
+                    <div class="col-lg"></div>
+                </div>
+                <div class="row gx-5 align-items-center info">
+                    <div class="col-lg"></div>
+                    <div class="col-lg-9 sex-v">
+                        <p class="para"></p>
+                    </div>
+                    <div class="col-lg"></div>
+                    <div class="col-lg"></div>
+                </div>
+
+
+                <div class="row gx-5 align-items-center info">
+                    <div class="col-lg"></div>
+                    <div class="col-lg-9 mapping-age">
+                        <p>配對年齡</p>
+                    </div>
+                    <div class="col-lg mapping-age-btn">
+                        <button class="mapping-age-edit">
+                            <img src="img\pencil-square.svg" width="26" height="26" alt="">
+                        </button>
+                        <button class="mapping-age-save none">
+                            <img src="img\check.svg" width="26" height="26" alt="">
+                        </button>
+                    </div>
+                    <div class="col-lg"></div>
+                </div>
+                <div class="row gx-5 align-items-center info">
+                    <div class="col-lg"></div>
+                    <div class="col-lg-9 mapping-age-v">
+                        <p id="amount"></p>
+                        <div class="mapping-age-update none" id="slider-range"></div>
+                    </div>
+                    <div class="col-lg"></div>
+                    <div class="col-lg"></div>
+                </div>
+
+
+                <div class="row gx-5 align-items-center info">
+                    <div class="col-lg"></div>
+                    <div class="col-lg-9 mapping-sex">
+                        <p>配對性別</p>
+                    </div>
+                    <div class="col-lg mapping-sex-btn">
+                        <button class="mapping-sex-edit">
+                            <img src="img\pencil-square.svg" width="26" height="26" alt="">
+                        </button>
+                        <button class="mapping-sex-save none">
+                            <img src="img\check.svg" width="26" height="26" alt="">
+                        </button>
+                    </div>
+                    <div class="col-lg"></div>
+                </div>
+                <div class="row gx-5 align-items-center info">
+                    <div class="col-lg"></div>
+                    <div class="col-lg-9 mapping-sex-v">
+                        <p class="para"></p>
+
+                        <input type="radio" class="mapping-sex-update none" id="woman" name="mapping-sex" value="1">
+                        <label class="mapping-sex-update none" for="woman">男</label>
+
+                        <input type="radio" class="mapping-sex-update none" id="man" name="mapping-sex" value="0">
+                        <label class="mapping-sex-update none" for="man">女</label>
+
+                        <input type="radio" class="mapping-sex-update none" id="all" name="mapping-sex" value="2">
+                        <label class="mapping-sex-update none" for="all">我全都要</label>
+                    </div>
+                    <div class="col-lg"></div>
+                    <div class="col-lg"></div>
+                </div>
+
+
+                <div class="row gx-5 align-items-center info">
+                    <div class="col-lg"></div>
+                    <div class="col-lg-9 intro">
+                        <p>自我介紹</p>
+                    </div>
+                    <div class="col-lg intro-btn">
+                        <button class="intro-edit">
+                            <img src="img\pencil-square.svg" width="26" height="26" alt="">
+                        </button>
+                        <button class="intro-save none">
+                            <img src="img\check.svg" width="26" height="26" alt="">
+                        </button>
+                    </div>
+                    <div class="col-lg"></div>
+                </div>
+                <div class="row gx-5 align-items-center info">
+                    <div class="col-lg"></div>
+                    <div class="col-lg-9 intro-v">
+                        <p class="para">賴皮豬 拖椅子的狗 最垃圾職業丐幫</p>
+                        <textarea class="intro-update none" name="intro" id="intro" cols="50" rows="10">賴皮豬 拖椅子的狗 最垃圾職業丐幫</textarea>
+                    </div>
+                    <div class="col-lg"></div>
+                    <div class="col-lg"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto">
+                        <div class="small m-0 text-white">Copyright &copy; Fun Friends 2021</div>
+                    </div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="jquery/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="js/mapping.js"></script>
+</body>
+
+</html>
