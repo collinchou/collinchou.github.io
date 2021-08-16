@@ -105,7 +105,7 @@ $.ajax({
 });
 
 //更新資料
-$("#login-btn").on("click", function() {
+$("#submit-btn").on("click", function() {
     var update_obj = {
         "account": "test3",
         "user_nickname": $(".nikename-v").find(".nikename-update").val().trim(),

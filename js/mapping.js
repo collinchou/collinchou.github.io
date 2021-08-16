@@ -30,13 +30,18 @@ $(".mapping-sex-save").on("click", function() {
         alert("請選擇要要配對的性別...");
     } else {
         $(".mapping-sex-save").toggleClass("none");
-
+        $("#man").attr("checked", false); //取消打勾
+        $("#woman").attr("checked", false); //取消打勾
+        $("#all").attr("checked", false); //取消打勾
         if (msex == 0) {
             $(".mapping-sex-v").find(".para").html("女");
+            $("#woman").attr("checked", true); //設定打勾
         } else if (msex == 1) {
             $(".mapping-sex-v").find(".para").html("男");
+            $("#man").attr("checked", true); //設定打勾
         } else if (msex == 2) {
             $(".mapping-sex-v").find(".para").html("我全都要");
+            $("#all").attr("checked", true);
         }
 
         $(".mapping-sex-v").find(".para").toggleClass("none");
@@ -68,7 +73,7 @@ $("#togBtn").on('change', function() {
 });
 
 //資料庫select會員的資料
-var send_obj = { "account": "test3" };
+var send_obj = { "account": "test2" };
 
 $.ajax({
     method: "GET",
@@ -125,6 +130,7 @@ $.ajax({
         }
         $(".intro-v").find(".para").html(data.intro);
         $(".intro-v").find(".intro-update").val(data.intro);
+        $(".rounded-circle").attr("src", data.photo);
         console.log(data);
     },
     error: function() {},
@@ -148,4 +154,53 @@ $(function() {
         " - " + $("#slider-range").slider("values", 1));
 
     $("#togBtn").change();
+});
+
+$("#submit-btn").on("click", function() {
+    var mapping;
+    switch ($(".mapping-v").find("#togBtn").val()) {
+        case "off":
+            mapping = 0;
+            break;
+        case "on":
+            mapping = 1;
+            break;
+    }
+    var mappingsex;
+    switch ($("input[name=mapping-sex]:checked").val()) {
+        case "0":
+            mappingsex = 0;
+            break;
+        case "1":
+            mappingsex = 1;
+            break;
+        case "2":
+            mappingsex = 2;
+            break;
+    }
+
+    var update_obj = {
+        "account": "test2",
+        "mapping": mapping,
+        "age_min": $("#slider-range").slider("values", 0),
+        "age_max": $("#slider-range").slider("values", 1),
+        "mapping_sex": mappingsex,
+        "intro": $(".intro-v").find(".intro-update").val().trim(),
+    }
+    console.log(update_obj);
+    $.ajax({
+        method: "POST",
+        url: "http://localhost:8081/FFF/MappingServletUpdate",
+        data: update_obj,
+        dataType: 'json',
+        success: function(data) {
+            alert("成功");
+            console.log(data);
+        },
+        error: function(data) {
+            alert("失敗");
+            console.log(data);
+        },
+        complete: function() {}
+    });
 });
