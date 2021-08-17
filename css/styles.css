@@ -10886,3 +10886,7 @@ body{
   margin: 0px;
   transform: (-110px, 34px);
 }
+
+.none {
+  display: none;
+}
